@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CWL Fest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #1e1e2f, #3f0f78);
+      color: white;
+    }
+    header {
+      background-color: #ff0066;
+      padding: 1rem;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1a1a2e;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff0066;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .highlight {
+      font-size: 1.3rem;
+      color: #ffcc00;
+      margin-top: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: #292942;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 102, 0.3);
+    }
+    footer {
+      background: #1a1a2e;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1535556116002-6281ff8a06e4') center/cover no-repeat;
+      padding: 6rem 2rem;
+      text-align: center;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      font-family: 'Anton', sans-serif;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+    }
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+    }
+    #countdown {
+      font-size: 2rem;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+    .ticket-table {
+      margin: 2rem auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+    }
+    .ticket-table th, .ticket-table td {
+      border: 1px solid #fff;
+      padding: 0.75rem 1rem;
+      text-align: center;
+    }
+    .ticket-table th {
+      background-color: #ff0066;
+    }
+    .ticket-table tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    CWL FEST 2025
+  </header>
+  <nav>
+    <a href="#home">Strona Główna</a>
+    <a href="#schedule">Harmonogram</a>
+    <a href="#tickets">Bilety</a>
+    <a href="#info">Informacje</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>CWL FEST – 22-24 SIERPNIA</h2>
+    <p>Warszawa, Lotnisko Bemowo</p>
+    <div id="countdown"></div>
+  </section>
+
+  <section id="schedule">
+    <h2>Harmonogram – Największe gwiazdy</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Piątek</h3>
+        <p>16:00 - 2t4</p>
+        <p>20:00 - Bedoes</p>
+        <p>23:00 - Taco Hemingway</p>
+      </div>
+      <div class="card">
+        <h3>Sobota</h3>
+        <p>16:00 - schafter</p>
+        <p>20:00 - Quebonafide</p>
+        <p>23:00 - Białas</p>
+      </div>
+      <div class="card">
+        <h3>Niedziela</h3>
+        <p>16:00 - Peja</p>
+        <p>20:00 - Malik Montana</p>
+        <p>23:00 - Sylwia Grzeszczak</p>
+      </div>
+    </div>
+    <p class="highlight">...i wiele, wiele innych!</p>
+  </section>
+
+  <section id="tickets">
+    <h2>Bilety</h2>
+    <p class="highlight">Dostępne opcje: jednodniowe, karnet 3-dniowy, VIP.</p>
+    <table class="ticket-table">
+      <tr>
+        <th>Typ biletu</th>
+        <th>Cena</th>
+      </tr>
+      <tr>
+        <td>Jednodniowy</td>
+        <td>129 zł</td>
+      </tr>
+      <tr>
+        <td>Karnet 3-dniowy</td>
+        <td>299 zł</td>
+      </tr>
+      <tr>
+        <td>VIP</td>
+        <td>599 zł</td>
+      </tr>
+    </table>
+    <p>Zarezerwuj już teraz i nie przegap tego wydarzenia!</p>
+    <a href="https://goingapp.pl" target="_blank" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background-color: #ff0066; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Kup bilet</a>
+  </section>
+
+  <section id="info">
+    <h2>Informacje</h2>
+    <p class="highlight">Lokalizacja: Warszawa, Lotnisko Bemowo</p>
+    <p>Jak dojechać, gdzie zaparkować, co zabrać ze sobą – wszystkie szczegóły znajdziesz tutaj.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 CWL Fest. Wszystkie prawa zastrzeżone.
+  </footer>
+
+  <script>
+    const countdown = document.getElementById("countdown");
+    const festivalDate = new Date("August 22, 2025 00:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = festivalDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `Odliczanie: ${days}d ${hours}g ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+</body>
+</html>
